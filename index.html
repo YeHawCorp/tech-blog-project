@@ -1,20 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title> Tech News project</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <html>
+  <head>
+    <title>Tech Blog</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/nav-bar-css.css">
+            <link rel="stylesheet" type="text/css" href="css/trending-thumbnail.css">
+            <link rel="stylesheet" type="text/css" href="css/foooter.css">
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+            <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
 
-</head>
-<body>
-<button class="btn btn-primary">Test Button </button>
+  <body>
+    <!--Section above fixed nav bar-->
+    <div class="container-fluid" style="background-color:#F44336;color:#fff;height:150px;">
+      <h1>Affix Example</h1>
+      <h3>Fixed navbar on scroll</h3>
+    </div>
+    <!--End of Section above fixed nav bar-->
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    <!--Start of Fixed Nav Bar Section-->
+      <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">News <span class="caret">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Top 5<span class="caret">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">How To <span class="caret">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming <span class="caret">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Review <span class="caret"> 
+                </span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section41">Section 4-1</a></li>
+                    <li><a href="#section42">Section 4-2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of the fixed navigation section-->
+      
+      <!--Starting of Hover Effect Trending thumbnail for news-->
+          <div class="container-fluid">
+          <!--Starting of first thumbnail-->
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
+                      <div class="overlay">
+                          <h2>News</h2>
+                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+                        <a href="#">read more</a></p>
+                      </div>
+                </div>
+            </div>
+            <!--End of first thumbnail-->
+
+            <!--Starting of Second Thumbnail-->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
+                      <div class="overlay">
+                          <h2>Newsf assjfla
+                          fklasjl kfjalsf
+                          ajkfhkjahfha
+                          fjahfa
+                          </h2>
+                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+                        <a href="#">read more</a></p>
+                      </div>
+                </div>
+            </div>
+             <!--End of Second thumbnail-->
+
+             <!--Starting of third thumbnail-->
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
+                      <div class="overlay">
+                          <h2>News</h2>
+                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
+                        <a href="#">read more</a></p>
+                      </div>
+                </div>
+            </div>
+            <!--End of third thumbnail-->
+
+          </div>
+          <!--End of Container for thumbnail-->
+
+          
+
+          <!--Footer Section-->
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+
+                  <h3>Company<span>logo</span></h3>
+
+                  <p class="footer-links">
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Contact</a>
+                    ·
+                    <a href="#">Our Team</a>
+                    ·
+                    <a href="#">Privacy Policy</a>
+                    ·
+                    <a href="#">Advertise</a>
+                  </p>
+
+                  <p class="footer-company-name">Company Name &copy; 2017</p>
+                </div>
+
+                <div class="footer-center">
+
+                  <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Banepa</span> Kavre, Nepal</p>
+                  </div>
+
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                  </div>
+
+                  <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">email@company.com</a></p>
+                  </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                  <p class="footer-company-about">
+                    <span>About the Website</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                  </p>
+
+                  <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                  </div>
+
+                </div>
+
+              </footer>
+              <!--End of the Footer Section-->
+
+      </body>
 </html>
