@@ -5,14 +5,15 @@
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel="stylesheet" type="text/css" href="css/nav-bar-css.css">
-            <link rel="stylesheet" type="text/css" href="css/trending-thumbnail.css">
-            <link rel="stylesheet" type="text/css" href="css/foooter.css">
+            <link rel="stylesheet" type="text/css" href="../css/nav-bar-css.css">
+            <link rel="stylesheet" type="text/css" href="../css/contact/form.css">
+            <link rel="stylesheet" type="text/css" href="../css/contact/contact-footer.css">
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../js/contact/form.js"></script>
   </head>
 
   <body>
@@ -32,12 +33,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
+            <a class="navbar-brand" href="../index.html">WebSiteName</a>
           </div>
           <div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">News <span class="caret">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="../index.html">News <span class="caret">
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Top 5<span class="caret">
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">How To <span class="caret">
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming <span class="caret">
@@ -54,56 +55,69 @@
         </div>
       </nav>
       <!--End of the fixed navigation section-->
-      
-      <!--Starting of Hover Effect Trending thumbnail for news-->
-          <div class="container-fluid">
-          <!--Starting of first thumbnail-->
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
-                      <div class="overlay">
-                          <h2>News</h2>
-                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-                        <a href="#">read more</a></p>
-                      </div>
+
+          <!--Form-->
+
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+              <div class="errors">
+              </div>
+              <form action="<?=$_SERVER['PHP_SELF']?>" class="contact-form" method="POST">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" class="username form-control" placeholder="Enter your full name" value="">
+                    <i class="fa fa-user"></i>
+                    <span class="asterix">*</span>
+                    <span class="cross">x</span>
+                    <span class="verify"><i class="fa fa-check" aria-hidden="true"></i></span>
+                    <div class="alert alert-danger custom-alert">
+                    user must be more than 3 letter
+                    </div>
+                  </div>
+
+                
+                <div class="form-group">
+                <input type="text" name="email" class=" email form-control" placeholder="Your Email" value="">
+                <i class="fa fa-envelope"></i>
+                <span class="asterix">*</span>
+                <span class="cross">x</span>
+                <span class="verify"><i class="fa fa-check" aria-hidden="true"></i></span>
+                <div class="alert alert-danger custom-alert">
+                  Email can not be empty
                 </div>
-            </div>
-            <!--End of first thumbnail-->
-
-            <!--Starting of Second Thumbnail-->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
-                      <div class="overlay">
-                          <h2>Newsf assjfla
-                          fklasjl kfjalsf
-                          ajkfhkjahfha
-                          fjahfa
-                          </h2>
-                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-                        <a href="#">read more</a></p>
-                      </div>
                 </div>
-            </div>
-             <!--End of Second thumbnail-->
 
-             <!--Starting of third thumbnail-->
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="images/test.jpg" alt="" style="height: 200px; width: 350px;">
-                      <div class="overlay">
-                          <h2>News</h2>
-                        <p class="info">Our sleek quality work and  synergized effect of our team’s creative mind have paved the way for offering innovative services to our clients.
-                        <a href="#">read more</a></p>
-                      </div>
+                
+                <div class="form-group">
+                <input type="text" name="subject" class="subject form-control" placeholder="Your subject" value="">
+                <i class="fa fa-pencil"></i>
+                <span class="asterix">*</span>
+                <span class="cross">x</span>
+                <span class="verify"><i class="fa fa-check" aria-hidden="true"></i></span>
+                <div class="alert alert-danger custom-alert">
+                  Subject can not be empty
                 </div>
+                </div>
+
+                
+                <div class="form-group">
+                <textarea class=" message form-control" name="message" placeholder="Your Message"></textarea>
+                <i class="fa fa-comments message-icon"></i>
+                <span class="asterix">*</span>
+                <span class="cross">x</span>
+                <span class="verify"><i class="fa fa-check" aria-hidden="true"></i></span>
+                <div class="alert alert-danger custom-alert">
+                  message should be more than <b>10</b> characteres
+                </div>
+                </div>
+
+                <div class="form-group">
+                <input type="submit" value="send" class="btn btn-success btn-block">
+                <i class="fa fa-paper-plane send-icon"></i>
+                </div>
+              </form>
             </div>
-            <!--End of third thumbnail-->
 
-          </div>
-          <!--End of Container for thumbnail-->
-
-          
+          <!--End of Form-->
 
           <!--Footer Section-->
             <footer class="footer-distributed">
@@ -115,7 +129,7 @@
                   <p class="footer-links">
                     <a href="#">About</a>
                     ·
-                    <a href="pages/contact.html">Contact</a>
+                    <a href="#">Contact</a>
                     ·
                     <a href="#">Our Team</a>
                     ·
@@ -166,7 +180,7 @@
 
               </footer>
               <!--End of the Footer Section-->
-
+              
 
       </body>
 </html>
