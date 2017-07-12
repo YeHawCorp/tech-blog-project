@@ -1,5 +1,12 @@
 
 /**Nav-Bar-Style-End*/
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
 .col-big{
     position: relative;
 	min-height: 1px;
